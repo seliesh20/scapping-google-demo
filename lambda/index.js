@@ -67,7 +67,7 @@ exports.handler = async (event, context) => {
       date:new Date().toISOString()
     }
     
-    // Insert the defined document into the "haiku" collection
+    // Insert the defined document into the "scrapdatas" collection
     const result = await scrapdatas.insertOne(doc);
     
     const response = {
